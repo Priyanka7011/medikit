@@ -1,0 +1,155 @@
+:root {
+	--pri-clr: #7fffd4;
+	--sec-clr: #e0ffff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 1em;
+	z-index: 2;
+	color: white;
+	background-color: #036;
+	align-items: center;
+}
+
+.home-link {
+	text-decoration: none;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	font-size: xx-large;
+	font-family: "Poppins", sans-serif;
+	color: white;
+}
+
+.searchbar {
+	width: 100%;
+}
+
+.MuiOutlinedInput-notchedOutline {
+	border-color: white !important;
+}
+.MuiFormLabel-root {
+	color: white !important;
+}
+.MuiInputBase-input {
+	color: white !important;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.avatar {
+	cursor: pointer;
+}
+
+.login-btn {
+	font-family: "Lato", serif;
+	border: none;
+	font-size: large;
+	background-color: #036;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	transition: color 250ms;
+}
+
+.login-btn:hover {
+	color: orange;
+}
+
+#nav-check {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		padding: 0.5em;
+		justify-content: space-between;
+	}
+
+	.home-link {
+		width: initial;
+	}
+
+	.searchbar {
+		width: 50%;
+	}
+
+	.logo {
+		font-size: x-large;
+	}
+
+	.navbar > label {
+		height: 2em;
+		width: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.navbar > label > span {
+		display: block;
+		width: 90%;
+		background-color: white;
+		height: 0.125em;
+	}
+
+	.navbar > label:hover,
+	.navbar > #nav-check:checked ~ label {
+		background-color: rgba(255, 255, 255, 0.336);
+	}
+
+	#nav-check:not(:checked) ~ label {
+		background-color: transparent;
+	}
+
+	.avatar {
+		background-color: black;
+		padding: 0.5em;
+		border-radius: 50%;
+	}
+
+	.login-btn {
+		padding: 0.5em;
+		border-radius: 0.25em;
+	}
+
+	.button-container {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.8);
+		height: 0px;
+		transition: all 0.3s ease-in;
+		overflow-y: hidden;
+		top: 4em;
+		left: 0;
+	}
+
+	.navbar > #nav-check:not(:checked) ~ .button-container {
+		height: 0;
+	}
+
+	.navbar > #nav-check:checked ~ .button-container {
+		height: 30vh;
+	}
+}
