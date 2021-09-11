@@ -1,0 +1,151 @@
+:root {
+	--pri-clr: #7fffd4;
+	--sec-clr: #e0ffff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.pharmacy-container {
+	padding: 8em;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: #e6e6f7;
+}
+
+.container-left {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 60%;
+}
+
+.container-right {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	align-items: center;
+	padding:1em;
+}
+
+.pharmacy-details-container {
+	border-radius: 10px;
+	box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+-webkit-box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+-moz-box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+	width: 100%;
+	display: flex;
+	margin: 0.5em;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	padding:2em 0;
+	background-color: rgb(224, 225, 225.0.4);
+	
+}
+
+.pharmacy-details-medicine {
+	width: 100%;
+	font-family: "Lato";
+	font-size: medium;
+	padding-bottom: 0.5em;
+	margin-top:10px;
+	padding-left:8px;
+}
+
+.pharmacy-details-name {
+	width: 100%;
+	font-family: "Poppins";
+	font-size: x-large;
+	padding: 0.5em;
+}
+.color-band{
+	width:100%;
+	height:40px;
+	background-color: #bcc5f7;
+	padding:20px;
+	box-shadow: 4px 2px 12px -4px rgba(0,0,0,0.38);
+	-webkit-box-shadow: 4px 2px 12px -4px rgba(0,0,0,0.38);
+	-moz-box-shadow: 4px 2px 12px -4px rgba(0,0,0,0.38);
+}
+.goto-cart-button {
+	border: none;
+	border-radius: 0.25em;
+	background-color: black;
+	color: white;
+	font-family: "Bona Nova";
+	font-size: large;
+	padding: 1em;
+	margin: 1em;
+	cursor: pointer;
+}
+
+.goto-cart-button:hover {
+	color: var(--pri-clr);
+}
+
+.medicine-item {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	border-radius: 0.25em;
+	place-items: center;
+	margin: 1em;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.medicine-image {
+	height: 6em;
+	margin: 1em;
+	object-fit: cover;
+}
+
+.medicine-name {
+	font-family: "Lora";
+	font-size: large;
+	color: #171717;
+}
+
+.medicine-price {
+	font-family: "Lora";
+	font-size: large;
+}
+
+.medcine-quantity {
+	font-family: "Lora";
+	font-size: large;
+}
+
+.medicine-select {
+	padding: 0.5em;
+	font-size: medium;
+}
+
+@media only screen and (max-width: 768px) {
+	.pharmacy-container {
+		flex-direction: column-reverse;
+		padding: 4em;
+	}
+	.container-left {
+		width: 100%;
+	}
+	.container-right {
+		width: 100%;
+	}
+}
+
+.custBtn{
+	border:none;
+	padding:10px;
+	border-radius: 4px;
+	font-family: "Poppins";
+	cursor:pointer
+}
+
+.formInput{
+	width:80% !important;
+	border:1px solid grey;
+	border-radius:5px;
+	padding:10px ;
+}
