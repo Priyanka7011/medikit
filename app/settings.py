@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import environ
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,23 +32,18 @@ SECRET_KEY = env.str("DJANGO_SECRET_KEY")
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
-    "django_cassandra_engine",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
-    # "django.contrib.sessions",
+    "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "api",
     "django.contrib.sites",
-    "django_cassandra_engine.sessions",
 ]
-
-SESSION_ENGINE = "django_cassandra_engine.sessions.backends.db"
 
 SITE_ID = 1
 
@@ -84,22 +80,13 @@ ASGI_APPLICATION = "app.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+import os
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django_cassandra_engine",
-        "NAME": "final",
-        "TEST_NAME": "test-database",
-        "USER": "token",
-        "PASSWORD": env.str("token"),
-        "OPTIONS": {
-            "connection": {
-                "cloud": {
-                    "secure_connect_bundle": "app\secure-connect-test-database.zip"
-                },
-            }
-        },
-    }
+    "default": dj_database_url.config(
+        default=os.path.expandvars(env.str("COCKROACH_DB_URL")),
+        engine="django_cockroachdb",
+    )
 }
 
 

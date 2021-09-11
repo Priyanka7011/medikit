@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../CSS/Cart.css";
 import CartItem from "../Components/CartItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle} from '@fortawesome/free-solid-svg-icons'
-
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 export default function Cart({ user, cart, setCart, items }) {
 	const [cartAmount, setCartAmount] = useState(0);
@@ -66,19 +65,24 @@ export default function Cart({ user, cart, setCart, items }) {
 					))}
 			</div>
 			<div className="cartscreen__right">
-				
 				<div className="cartscreen__info">
-				<div class='cardHeader'>
-					<p style={{'fontWeight':'bold'}}>Order Summary</p>
-				</div>
-					<div className='order' style={{'display':'flex','flexDirection':'column'}}>
+					<div class="cardHeader">
+						<p style={{ fontWeight: "bold" }}>Order Summary</p>
+					</div>
+					<div
+						className="order"
+						style={{ display: "flex", flexDirection: "column" }}
+					>
 						<span>Total Items: {cartAmount}</span>
 						<span>Total Price: Rs {cartPrice.toFixed(2)}</span>
 					</div>
 				</div>
-				<button className="checkout">
+				<button className="checkout" onClick={handleOnClick}>
 					<FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon>
-					<span style={{'marginLeft':'5px'}}>Proceed to checkout</span></button>
+					<span style={{ marginLeft: "5px" }}>
+						Proceed to checkout
+					</span>
+				</button>
 			</div>
 		</div>
 	);

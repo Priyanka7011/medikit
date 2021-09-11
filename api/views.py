@@ -83,7 +83,7 @@ async def cart(request: HttpRequest):
         cart_object = await sync_to_async(Cart.objects.filter)(
             username=request.GET["username"]
         )
-        if await sync_to_async(cart_object.if_exists)():
+        if await sync_to_async(cart_object.exists)():
             cart_object = await sync_to_async(cart_object.first)()
             return JsonResponse({"cart": cart_object.cart_json}, status=200)
         return JsonResponse({"cart": {}}, status=200)
@@ -93,11 +93,11 @@ async def cart(request: HttpRequest):
         cart_object = await sync_to_async(Cart.objects.filter)(
             username=body["username"]
         )
-        if await sync_to_async(cart_object.if_exists)():
+        if await sync_to_async(cart_object.exists)():
             cart_object = await sync_to_async(cart_object.first)()
             cart_object.cart_json = body["cart"]
         else:
-            cart_object = Cart(username=body["username"], cart=body["cart"])
+            cart_object = Cart(username=body["username"], cart_json=body["cart"])
         await sync_to_async(cart_object.save)()
         return JsonResponse({"cart": cart_object.cart_json}, status=200)
 
@@ -201,7 +201,7 @@ async def update(request: HttpRequest, pharmacy_eloc: str = None):
             if pharmacy_eloc is not None:
                 return await pharmacy_get(request, pharmacy_eloc)
             return default_json_response
-            return await pharmacy_get_nearby(request)
+            # return await pharmacy_get_nearby(request)
     except Exception as _:
         print_exc()
     return default_json_response
