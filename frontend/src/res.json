@@ -1,0 +1,944 @@
+{
+    "nearby_pharmacies": [
+        {
+            "distance": 680,
+            "eLoc": "5ZV1NY",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 1,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Goyal Medical",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 46,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/08/14/01/50/syringe-417786_150.jpg",
+                    "name": "GLYCOPYRROLATE",
+                    "amount": 28,
+                    "price": 302.2863784453526,
+                    "retail_price": 339.5631212654993
+                },
+                {
+                    "pk": 103,
+                    "image_url": "https://cdn.pixabay.com/photo/2012/12/21/10/06/addiction-71576_150.jpg",
+                    "name": "DEXAMETHASONE",
+                    "amount": 19,
+                    "price": 94.6813561341847,
+                    "retail_price": 116.29556130924024
+                },
+                {
+                    "pk": 9,
+                    "image_url": "https://cdn.pixabay.com/photo/2015/11/07/11/22/smoke-1031060_150.jpg",
+                    "name": "POTASSIUM CHLORIDE",
+                    "amount": 52,
+                    "price": 276.0757046134377,
+                    "retail_price": 291.50468555577356
+                },
+                {
+                    "pk": 62,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/01/15/12/42/woman-3933989_150.jpg",
+                    "name": "CELECOXIB",
+                    "amount": 24,
+                    "price": 89.93356362599455,
+                    "retail_price": 97.3068600993218
+                },
+                {
+                    "pk": 14,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/02/03/11/31/medications-257336_150.jpg",
+                    "name": "HYDROCODONE BITARTRATE AND ACETAMINOPHEN",
+                    "amount": 40,
+                    "price": 147.43435122551404,
+                    "retail_price": 154.17914836404054
+                },
+                {
+                    "pk": 51,
+                    "image_url": "https://cdn.pixabay.com/photo/2015/07/06/08/30/thermometer-833085_150.jpg",
+                    "name": "LEVOFLOXACIN",
+                    "amount": 27,
+                    "price": 153.3694934035092,
+                    "retail_price": 172.0169228887624
+                },
+                {
+                    "pk": 29,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/01/28/18/28/pills-3114364_150.jpg",
+                    "name": "GABAPENTIN",
+                    "amount": 32,
+                    "price": 200.33001379185885,
+                    "retail_price": 214.67667199976722
+                },
+                {
+                    "pk": 83,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/06/28/03/40/medicine-2449619_150.jpg",
+                    "name": "ONDANSETRON HYDROCHLORIDE",
+                    "amount": 22,
+                    "price": 87.25451589241244,
+                    "retail_price": 101.28955857810985
+                },
+                {
+                    "pk": 44,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/01/12/13/13/syringe-1974677_150.jpg",
+                    "name": "BETAMETHASONE DIPROPIONATE",
+                    "amount": 28,
+                    "price": 98.24026993381099,
+                    "retail_price": 104.32597176951523
+                },
+                {
+                    "pk": 50,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/09/14/21/41/marijuana-3678222_150.jpg",
+                    "name": "LANSOPRAZOLE",
+                    "amount": 27,
+                    "price": 175.56985103831528,
+                    "retail_price": 187.006901573636
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2018/09/14/21/41/marijuana-3678222_150.jpg"
+        },
+        {
+            "distance": 800,
+            "eLoc": "J01FRR",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 2,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Sohan Medical",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 57,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/05/18/17/33/pocket-2324214_150.jpg",
+                    "name": "PREDNISONE",
+                    "amount": 26,
+                    "price": 222.84647325854527,
+                    "retail_price": 257.4654013014575
+                },
+                {
+                    "pk": 49,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/06/26/13/27/poppy-4300371_150.jpg",
+                    "name": "PHENTERMINE HYDROCHLORIDE",
+                    "amount": 28,
+                    "price": 82.63682993205893,
+                    "retail_price": 82.64233007132145
+                },
+                {
+                    "pk": 26,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/07/25/10/15/headache-1540220_150.jpg",
+                    "name": "LEVONORGESTREL AND ETHINYL ESTRADIOL",
+                    "amount": 34,
+                    "price": 160.98982890728286,
+                    "retail_price": 186.68966446937944
+                },
+                {
+                    "pk": 39,
+                    "image_url": "https://cdn.pixabay.com/photo/2021/05/28/07/46/flower-6290130_150.jpg",
+                    "name": "DESOXIMETASONE",
+                    "amount": 29,
+                    "price": 74.3406100137194,
+                    "retail_price": 79.69302330354664
+                },
+                {
+                    "pk": 81,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/09/04/15/50/alkoghol-2714482_150.jpg",
+                    "name": "NAPROXEN SODIUM",
+                    "amount": 22,
+                    "price": 64.19107911719706,
+                    "retail_price": 73.54154945963634
+                },
+                {
+                    "pk": 100,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/09/23/03/59/capsule-2777807_150.jpg",
+                    "name": "PREGABALIN",
+                    "amount": 20,
+                    "price": 204.5357806017796,
+                    "retail_price": 230.61711161535558
+                },
+                {
+                    "pk": 60,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/04/07/15/22/mental-health-2211182_150.jpg",
+                    "name": "TOBRAMYCIN",
+                    "amount": 25,
+                    "price": 293.5437637115132,
+                    "retail_price": 336.8500556771763
+                },
+                {
+                    "pk": 91,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/09/16/19/52/cannabis-448661_150.jpg",
+                    "name": "PROPRANOLOL HYDROCHLORIDE",
+                    "amount": 21,
+                    "price": 83.97033106179167,
+                    "retail_price": 98.66398129685683
+                },
+                {
+                    "pk": 6,
+                    "image_url": "https://cdn.pixabay.com/photo/2015/08/25/03/50/herbs-906140_150.jpg",
+                    "name": "METHYLPHENIDATE HYDROCHLORIDE",
+                    "amount": 62,
+                    "price": 118.72080588588032,
+                    "retail_price": 150.4839914126458
+                },
+                {
+                    "pk": 70,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/01/04/19/29/blood-pressure-monitor-1952924_150.jpg",
+                    "name": "NICOTINE",
+                    "amount": 23,
+                    "price": 148.60572873654232,
+                    "retail_price": 167.4197978674791
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2017/01/04/19/29/blood-pressure-monitor-1952924_150.jpg"
+        },
+        {
+            "distance": 830,
+            "eLoc": "9UZPH7",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 3,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Vishnu Medical",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 84,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/06/15/18/31/poppy-4276246_150.jpg",
+                    "name": "DESMOPRESSIN ACETATE",
+                    "amount": 21,
+                    "price": 252.17011379278688,
+                    "retail_price": 264.4271107490383
+                },
+                {
+                    "pk": 31,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/03/29/13/15/candle-3272201_150.jpg",
+                    "name": "AZITHROMYCIN",
+                    "amount": 31,
+                    "price": 48.68226069017041,
+                    "retail_price": 58.10929362989133
+                },
+                {
+                    "pk": 45,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/10/19/08/30/about-3758125_150.jpg",
+                    "name": "DILTIAZEM HYDROCHLORIDE",
+                    "amount": 28,
+                    "price": 301.2522069290919,
+                    "retail_price": 307.2482278616974
+                },
+                {
+                    "pk": 56,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/12/06/04/22/pills-1885550_150.jpg",
+                    "name": "OLANZAPINE",
+                    "amount": 26,
+                    "price": 200.73536641950025,
+                    "retail_price": 208.37734703473976
+                },
+                {
+                    "pk": 74,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/02/18/19/12/globuli-3163133_150.jpg",
+                    "name": "TRETINOIN",
+                    "amount": 23,
+                    "price": 208.14636720981895,
+                    "retail_price": 211.4444129477746
+                },
+                {
+                    "pk": 28,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/10/10/17/51/pharmacy-1729442_150.png",
+                    "name": "LORATADINE",
+                    "amount": 33,
+                    "price": 109.87279455576076,
+                    "retail_price": 117.1098452926565
+                },
+                {
+                    "pk": 90,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/12/24/14/06/drugs-1928926_150.jpg",
+                    "name": "OXYBUTYNIN CHLORIDE",
+                    "amount": 21,
+                    "price": 64.59403896668759,
+                    "retail_price": 66.57270571540104
+                },
+                {
+                    "pk": 8,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/01/08/09/46/pill-3069032_150.jpg",
+                    "name": "LEVETIRACETAM",
+                    "amount": 60,
+                    "price": 104.94046672331893,
+                    "retail_price": 127.36205042694061
+                },
+                {
+                    "pk": 15,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/07/07/01/37/poppy-3521471_150.jpg",
+                    "name": "CETIRIZINE HYDROCHLORIDE",
+                    "amount": 39,
+                    "price": 115.98621931845943,
+                    "retail_price": 128.7616681120847
+                },
+                {
+                    "pk": 104,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/05/30/22/54/tablets-3442768_150.jpg",
+                    "name": "DEXAMETHASONE SODIUM PHOSPHATE",
+                    "amount": 19,
+                    "price": 258.96447514896033,
+                    "retail_price": 269.9515741031812
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2018/05/30/22/54/tablets-3442768_150.jpg"
+        },
+        {
+            "distance": 888,
+            "eLoc": "A3N8HT",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 4,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Sapna Medical",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 16,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/11/22/23/32/medications-1851178_150.jpg",
+                    "name": "DOXYCYCLINE HYCLATE",
+                    "amount": 39,
+                    "price": 227.11389226639216,
+                    "retail_price": 239.7116604211445
+                },
+                {
+                    "pk": 72,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/10/13/16/42/naturheilkunde-1738223_150.jpg",
+                    "name": "NORGESTIMATE AND ETHINYL ESTRADIOL",
+                    "amount": 23,
+                    "price": 255.9759721262004,
+                    "retail_price": 262.62396818285254
+                },
+                {
+                    "pk": 68,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/09/18/18/18/peppermint-4487398_150.jpg",
+                    "name": "HYDROCORTISONE",
+                    "amount": 23,
+                    "price": 72.31875342704211,
+                    "retail_price": 81.87227658334294
+                },
+                {
+                    "pk": 22,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/10/10/17/51/pharmacy-1729445_150.png",
+                    "name": "FLUOCINONIDE",
+                    "amount": 36,
+                    "price": 95.37545991318058,
+                    "retail_price": 117.03290466050443
+                },
+                {
+                    "pk": 79,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/02/02/14/41/counting-3125587_150.jpg",
+                    "name": "LIDOCAINE",
+                    "amount": 22,
+                    "price": 106.14055261247995,
+                    "retail_price": 130.79181328396874
+                },
+                {
+                    "pk": 55,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/04/02/09/31/medicine-4097308_150.jpg",
+                    "name": "METHADONE HYDROCHLORIDE",
+                    "amount": 26,
+                    "price": 156.62252179360135,
+                    "retail_price": 185.92496832484682
+                },
+                {
+                    "pk": 99,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/01/06/18/59/marijuana-3065621_150.jpg",
+                    "name": "OMEPRAZOLE",
+                    "amount": 20,
+                    "price": 180.70005428381393,
+                    "retail_price": 185.76125876658466
+                },
+                {
+                    "pk": 88,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/01/11/22/53/syringe-1973129_150.jpg",
+                    "name": "FUROSEMIDE",
+                    "amount": 21,
+                    "price": 147.97728799878155,
+                    "retail_price": 154.01818763976956
+                },
+                {
+                    "pk": 89,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/10/15/20/13/cannabis-490296_150.jpg",
+                    "name": "NITROGLYCERIN",
+                    "amount": 21,
+                    "price": 230.25510687038474,
+                    "retail_price": 271.84121794365103
+                },
+                {
+                    "pk": 35,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/08/05/18/55/medical-1572978_150.jpg",
+                    "name": "LAMOTRIGINE",
+                    "amount": 30,
+                    "price": 181.81495225401858,
+                    "retail_price": 204.08915451795616
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2016/08/05/18/55/medical-1572978_150.jpg"
+        },
+        {
+            "distance": 918,
+            "eLoc": "OMO778",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 5,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Navrang Medical",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 12,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/11/23/15/03/medications-1853400_150.jpg",
+                    "name": "ACYCLOVIR",
+                    "amount": 42,
+                    "price": 281.04483581943543,
+                    "retail_price": 291.10063383289383
+                },
+                {
+                    "pk": 11,
+                    "image_url": "https://cdn.pixabay.com/photo/2015/10/22/14/05/tablets-1001224_150.jpg",
+                    "name": "METFORMIN HYDROCHLORIDE",
+                    "amount": 45,
+                    "price": 119.41995557642633,
+                    "retail_price": 149.8172086293253
+                },
+                {
+                    "pk": 41,
+                    "image_url": "https://cdn.pixabay.com/photo/2013/06/08/13/22/lily-of-the-valley-123171_150.jpg",
+                    "name": "DONEPEZIL HYDROCHLORIDE",
+                    "amount": 29,
+                    "price": 181.3576387319377,
+                    "retail_price": 220.54089998397188
+                },
+                {
+                    "pk": 101,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/04/05/10/42/medicine-1309148_150.jpg",
+                    "name": "VENLAFAXINE HYDROCHLORIDE",
+                    "amount": 20,
+                    "price": 68.24927490038172,
+                    "retail_price": 90.50169280937338
+                },
+                {
+                    "pk": 25,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/12/03/12/38/medicine-2994788_150.jpg",
+                    "name": "FLUOCINOLONE ACETONIDE",
+                    "amount": 34,
+                    "price": 313.8411645823197,
+                    "retail_price": 324.2957092335586
+                },
+                {
+                    "pk": 86,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/02/18/19/12/globuli-3163134_150.jpg",
+                    "name": "ERYTHROMYCIN",
+                    "amount": 21,
+                    "price": 183.9597531300536,
+                    "retail_price": 231.29171277175914
+                },
+                {
+                    "pk": 66,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/10/10/13/20/drugs-1728381_150.jpg",
+                    "name": "CARBAMAZEPINE",
+                    "amount": 23,
+                    "price": 118.31237740354912,
+                    "retail_price": 150.06032842163376
+                },
+                {
+                    "pk": 24,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/09/04/11/02/addict-2713526_150.jpg",
+                    "name": "CLINDAMYCIN PHOSPHATE",
+                    "amount": 34,
+                    "price": 139.73284314395028,
+                    "retail_price": 177.99543011131658
+                },
+                {
+                    "pk": 43,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/03/02/09/19/flower-marigolds-3192686_150.png",
+                    "name": "ZOLEDRONIC ACID",
+                    "amount": 29,
+                    "price": 51.81694568353155,
+                    "retail_price": 60.55865786277408
+                },
+                {
+                    "pk": 30,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/09/04/11/37/addict-2713620_150.jpg",
+                    "name": "TADALAFIL",
+                    "amount": 32,
+                    "price": 180.7311810804833,
+                    "retail_price": 204.44728365767483
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2017/09/04/11/37/addict-2713620_150.jpg"
+        },
+        {
+            "distance": 922,
+            "eLoc": "C8DDS5",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 6,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Aravind Medical",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 33,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/09/07/12/08/apothecary-437743_150.jpg",
+                    "name": "FAMOTIDINE",
+                    "amount": 30,
+                    "price": 214.0937121503193,
+                    "retail_price": 269.60979617854275
+                },
+                {
+                    "pk": 77,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/08/06/14/04/globuli-1574436_150.jpg",
+                    "name": "DESONIDE",
+                    "amount": 22,
+                    "price": 88.05392880399596,
+                    "retail_price": 103.54858210844895
+                },
+                {
+                    "pk": 61,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/02/10/13/05/pharmacy-2055130_150.jpg",
+                    "name": "ARIPIPRAZOLE",
+                    "amount": 24,
+                    "price": 326.3076893936758,
+                    "retail_price": 337.29527181212626
+                },
+                {
+                    "pk": 75,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/08/12/18/57/target-2635030_150.jpg",
+                    "name": "VERAPAMIL HYDROCHLORIDE",
+                    "amount": 23,
+                    "price": 77.62700222269845,
+                    "retail_price": 87.79324437492335
+                },
+                {
+                    "pk": 20,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/12/06/12/34/freedom-1886402_150.jpg",
+                    "name": "LIDOCAINE HYDROCHLORIDE",
+                    "amount": 37,
+                    "price": 279.36311202745094,
+                    "retail_price": 318.2543490204866
+                },
+                {
+                    "pk": 58,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/10/11/22/51/ginger-2842826_150.png",
+                    "name": "MEMANTINE HYDROCHLORIDE",
+                    "amount": 25,
+                    "price": 242.65736163108576,
+                    "retail_price": 252.48555330678698
+                },
+                {
+                    "pk": 87,
+                    "image_url": "https://cdn.pixabay.com/photo/2013/07/26/05/52/thyme-167468_150.jpg",
+                    "name": "FLUTICASONE PROPIONATE",
+                    "amount": 21,
+                    "price": 76.88902142167308,
+                    "retail_price": 91.84008379119344
+                },
+                {
+                    "pk": 5,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/07/24/21/01/thermometer-1539191_150.jpg",
+                    "name": "CLOBETASOL PROPIONATE",
+                    "amount": 78,
+                    "price": 61.21833952827413,
+                    "retail_price": 62.47467545392428
+                },
+                {
+                    "pk": 48,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/09/25/15/18/stop-2785450_150.jpg",
+                    "name": "NYSTATIN",
+                    "amount": 28,
+                    "price": 255.440501228649,
+                    "retail_price": 266.43080320593447
+                },
+                {
+                    "pk": 78,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/05/19/09/20/pharmacy-3413039_150.png",
+                    "name": "DOXYCYCLINE",
+                    "amount": 22,
+                    "price": 118.71452487582035,
+                    "retail_price": 156.1550779342894
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2018/05/19/09/20/pharmacy-3413039_150.png"
+        },
+        {
+            "distance": 958,
+            "eLoc": "B64Y2L",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 7,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Tulasi Medical",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 94,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/03/16/23/19/cannabis-2150543_150.jpg",
+                    "name": "ACETAMINOPHEN",
+                    "amount": 20,
+                    "price": 186.98657671729217,
+                    "retail_price": 193.38996716267022
+                },
+                {
+                    "pk": 96,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/09/08/14/11/medical-3662564_150.jpg",
+                    "name": "METHOCARBAMOL",
+                    "amount": 20,
+                    "price": 275.19532860294294,
+                    "retail_price": 289.93074653598524
+                },
+                {
+                    "pk": 73,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/09/22/17/55/pharmacy-4496633_150.jpg",
+                    "name": "TRANEXAMIC ACID",
+                    "amount": 23,
+                    "price": 124.16223917017601,
+                    "retail_price": 138.51354054501576
+                },
+                {
+                    "pk": 95,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/08/26/18/30/hand-3632914_150.jpg",
+                    "name": "HYDROCHLOROTHIAZIDE",
+                    "amount": 20,
+                    "price": 291.7191003500067,
+                    "retail_price": 311.1997851512425
+                },
+                {
+                    "pk": 80,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/12/18/10/57/fish-oil-1915423_150.jpg",
+                    "name": "MINOCYCLINE HYDROCHLORIDE",
+                    "amount": 22,
+                    "price": 76.42729295095124,
+                    "retail_price": 94.53878005084246
+                },
+                {
+                    "pk": 13,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/02/03/11/51/medicine-257349_150.jpg",
+                    "name": "FENOFIBRATE",
+                    "amount": 42,
+                    "price": 216.865454885558,
+                    "retail_price": 233.72552743704222
+                },
+                {
+                    "pk": 19,
+                    "image_url": "https://cdn.pixabay.com/photo/2020/05/09/11/37/coffee-5149246_150.jpg",
+                    "name": "METRONIDAZOLE",
+                    "amount": 38,
+                    "price": 58.97166259928915,
+                    "retail_price": 60.0103687592018
+                },
+                {
+                    "pk": 76,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/07/07/02/23/poppy-3521507_150.jpg",
+                    "name": "BUDESONIDE",
+                    "amount": 22,
+                    "price": 110.78657204238996,
+                    "retail_price": 141.5565103123107
+                },
+                {
+                    "pk": 63,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/05/11/12/24/nuns-2304009_150.jpg",
+                    "name": "LEUCOVORIN CALCIUM",
+                    "amount": 24,
+                    "price": 142.25583075218182,
+                    "retail_price": 145.90997366938848
+                },
+                {
+                    "pk": 23,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/07/25/10/57/poppy-1540284_150.jpg",
+                    "name": "MORPHINE SULFATE",
+                    "amount": 35,
+                    "price": 79.39878356016557,
+                    "retail_price": 95.58472501575673
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2016/07/25/10/57/poppy-1540284_150.jpg"
+        },
+        {
+            "distance": 963,
+            "eLoc": "NJ678C",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 8,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Laxmi Dawakhana",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 37,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/07/25/11/15/poppy-1540291_150.jpg",
+                    "name": "AMOXICILLIN AND CLAVULANATE POTASSIUM",
+                    "amount": 29,
+                    "price": 242.56334056408633,
+                    "retail_price": 315.2167507191265
+                },
+                {
+                    "pk": 17,
+                    "image_url": "https://cdn.pixabay.com/photo/2020/12/15/15/36/gel-capsules-5834023_150.jpg",
+                    "name": "NICOTINE POLACRILEX",
+                    "amount": 39,
+                    "price": 84.64453319925899,
+                    "retail_price": 90.39689240155496
+                },
+                {
+                    "pk": 18,
+                    "image_url": "https://cdn.pixabay.com/photo/2013/11/05/23/59/gel-capsules-206150_150.jpg",
+                    "name": "BUPROPION HYDROCHLORIDE",
+                    "amount": 38,
+                    "price": 131.61317241092544,
+                    "retail_price": 134.58404543436745
+                },
+                {
+                    "pk": 65,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/08/23/16/21/drunk-2673385_150.jpg",
+                    "name": "BACLOFEN",
+                    "amount": 23,
+                    "price": 172.44936523717325,
+                    "retail_price": 187.87704489372868
+                },
+                {
+                    "pk": 59,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/02/14/14/54/pharmacy-2066096_150.jpg",
+                    "name": "SILDENAFIL",
+                    "amount": 25,
+                    "price": 91.85612638812883,
+                    "retail_price": 113.76854782135368
+                },
+                {
+                    "pk": 10,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/05/06/00/52/pharmacy-3377670_150.jpg",
+                    "name": "TRIAMCINOLONE ACETONIDE",
+                    "amount": 48,
+                    "price": 140.58254027120316,
+                    "retail_price": 181.4020355998441
+                },
+                {
+                    "pk": 92,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/12/18/10/57/fish-oil-1915425_150.jpg",
+                    "name": "RISPERIDONE",
+                    "amount": 21,
+                    "price": 183.01699777936025,
+                    "retail_price": 223.33976529552297
+                },
+                {
+                    "pk": 71,
+                    "image_url": "https://cdn.pixabay.com/photo/2015/11/30/19/08/drug-1070943_150.jpg",
+                    "name": "NORETHINDRONE AND ETHINYL ESTRADIOL",
+                    "amount": 23,
+                    "price": 53.470292523428604,
+                    "retail_price": 57.31626556943904
+                },
+                {
+                    "pk": 69,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/12/18/10/57/fish-oil-1915424_150.jpg",
+                    "name": "MESALAMINE",
+                    "amount": 23,
+                    "price": 116.36859826363288,
+                    "retail_price": 154.17695244968303
+                },
+                {
+                    "pk": 85,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/09/04/15/51/alkoghol-2714489_150.jpg",
+                    "name": "DIVALPROEX SODIUM",
+                    "amount": 21,
+                    "price": 269.70192327931215,
+                    "retail_price": 329.65136845051137
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2017/09/04/15/51/alkoghol-2714489_150.jpg"
+        },
+        {
+            "distance": 983,
+            "eLoc": "I95X38",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 9,
+            "placeAddress": "Kapadvanj, Gujarat, 387620",
+            "placeName": "Shewja Dawakhana",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 32,
+                    "image_url": "https://cdn.pixabay.com/photo/2013/11/20/23/00/test-214185_150.jpg",
+                    "name": "ESOMEPRAZOLE MAGNESIUM",
+                    "amount": 30,
+                    "price": 256.1669290558306,
+                    "retail_price": 262.27161702195286
+                },
+                {
+                    "pk": 38,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/04/03/16/32/girl-smoke-cigarette-2198839_150.jpg",
+                    "name": "CLOBAZAM",
+                    "amount": 29,
+                    "price": 286.3626238543224,
+                    "retail_price": 340.0935312523442
+                },
+                {
+                    "pk": 36,
+                    "image_url": "https://cdn.pixabay.com/photo/2016/12/13/01/28/hands-1903104_150.jpg",
+                    "name": "VANCOMYCIN HYDROCHLORIDE",
+                    "amount": 30,
+                    "price": 270.670780080651,
+                    "retail_price": 347.25815104273227
+                },
+                {
+                    "pk": 67,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/03/17/20/22/cannabis-2152604_150.jpg",
+                    "name": "DEFERASIROX",
+                    "amount": 23,
+                    "price": 207.98214065396903,
+                    "retail_price": 253.33690356242735
+                },
+                {
+                    "pk": 53,
+                    "image_url": "https://cdn.pixabay.com/photo/2013/11/26/17/23/pharmacy-218692_150.jpg",
+                    "name": "TESTOSTERONE",
+                    "amount": 27,
+                    "price": 115.74034358066197,
+                    "retail_price": 136.60314303124625
+                },
+                {
+                    "pk": 42,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/01/04/20/24/ecg-1953179_150.jpg",
+                    "name": "MONTELUKAST SODIUM",
+                    "amount": 29,
+                    "price": 139.0000318970601,
+                    "retail_price": 179.8403597626556
+                },
+                {
+                    "pk": 52,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/03/25/19/57/marijuana-2174302_150.jpg",
+                    "name": "MYCOPHENOLATE MOFETIL",
+                    "amount": 27,
+                    "price": 197.84309490440623,
+                    "retail_price": 219.44336921047926
+                },
+                {
+                    "pk": 64,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/09/04/11/29/addict-2713598_150.jpg",
+                    "name": "ALBUTEROL SULFATE",
+                    "amount": 23,
+                    "price": 127.5097222991325,
+                    "retail_price": 127.57845349829039
+                },
+                {
+                    "pk": 82,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/02/05/00/37/staging-258631_150.jpg",
+                    "name": "OLOPATADINE HYDROCHLORIDE",
+                    "amount": 22,
+                    "price": 238.11162416254152,
+                    "retail_price": 256.6378430724273
+                },
+                {
+                    "pk": 34,
+                    "image_url": "https://cdn.pixabay.com/photo/2015/02/03/02/24/drug-621843_150.jpg",
+                    "name": "HEPARIN SODIUM",
+                    "amount": 30,
+                    "price": 134.13431959035708,
+                    "retail_price": 150.73639582841167
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2015/02/03/02/24/drug-621843_150.jpg"
+        },
+        {
+            "distance": 990,
+            "eLoc": "U35S02",
+            "keywords": [
+                "HLTMDS"
+            ],
+            "orderIndex": 10,
+            "placeAddress": "Kapadwanj Kathalal Road, Kapadvanj, Gujarat, 387620",
+            "placeName": "Zarna Medical Store",
+            "type": "POI",
+            "items": [
+                {
+                    "pk": 27,
+                    "image_url": "https://cdn.pixabay.com/photo/2014/07/05/15/16/pills-384846_150.jpg",
+                    "name": "SODIUM CHLORIDE",
+                    "amount": 34,
+                    "price": 285.0565784624191,
+                    "retail_price": 298.469908089089
+                },
+                {
+                    "pk": 54,
+                    "image_url": "https://cdn.pixabay.com/photo/2017/04/21/09/12/marijuana-2248066_150.jpg",
+                    "name": "ESTRADIOL",
+                    "amount": 26,
+                    "price": 158.1865392006103,
+                    "retail_price": 172.2550015240626
+                },
+                {
+                    "pk": 97,
+                    "image_url": "https://cdn.pixabay.com/photo/2015/03/19/17/10/medical-681119_150.jpg",
+                    "name": "NORETHINDRONE ACETATE AND ETHINYL ESTRADIOL",
+                    "amount": 20,
+                    "price": 226.99964373437925,
+                    "retail_price": 269.21361485528683
+                },
+                {
+                    "pk": 102,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/01/18/19/17/arnica-3940470_150.jpg",
+                    "name": "CLONIDINE HYDROCHLORIDE",
+                    "amount": 19,
+                    "price": 164.49427052119924,
+                    "retail_price": 186.1402818393071
+                },
+                {
+                    "pk": 7,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/05/28/23/50/poppy-4236396_150.jpg",
+                    "name": "IBUPROFEN",
+                    "amount": 61,
+                    "price": 54.44659147851548,
+                    "retail_price": 71.47200897851585
+                },
+                {
+                    "pk": 40,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/06/04/10/03/poppy-4251084_150.jpg",
+                    "name": "DICLOFENAC SODIUM",
+                    "amount": 29,
+                    "price": 200.77123239109542,
+                    "retail_price": 260.1305868725837
+                },
+                {
+                    "pk": 93,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/02/10/22/10/real-marshmallow-3988346_150.jpg",
+                    "name": "VORICONAZOLE",
+                    "amount": 21,
+                    "price": 67.795239470226,
+                    "retail_price": 73.54875933606742
+                },
+                {
+                    "pk": 47,
+                    "image_url": "https://cdn.pixabay.com/photo/2020/03/01/17/24/witchcraft-4893559_150.jpg",
+                    "name": "KETOROLAC TROMETHAMINE",
+                    "amount": 28,
+                    "price": 116.31027799063861,
+                    "retail_price": 139.9940254980766
+                },
+                {
+                    "pk": 98,
+                    "image_url": "https://cdn.pixabay.com/photo/2018/02/02/13/42/america-3125467_150.jpg",
+                    "name": "NYSTATIN AND TRIAMCINOLONE ACETONIDE",
+                    "amount": 20,
+                    "price": 82.16387283584629,
+                    "retail_price": 87.3379506991895
+                },
+                {
+                    "pk": 21,
+                    "image_url": "https://cdn.pixabay.com/photo/2019/06/01/10/39/poppy-4243860_150.jpg",
+                    "name": "OXYCODONE HYDROCHLORIDE",
+                    "amount": 37,
+                    "price": 120.85006751139558,
+                    "retail_price": 137.501196255977
+                }
+            ],
+            "image_url": "https://cdn.pixabay.com/photo/2019/06/01/10/39/poppy-4243860_150.jpg"
+        }
+    ]
+}

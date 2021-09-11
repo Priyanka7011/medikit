@@ -1,0 +1,84 @@
+:root {
+	--pri-clr: #7fffd4;
+	--sec-clr: #e0ffff;
+}
+
+* {
+	box-sizing: border-box;
+}
+.detail-card{
+	display: flex;
+	flex-direction: column;
+	margin-left:10%;
+	width:60%;
+	padding:30px;
+}
+.color-card{
+	background-color: #036;
+	width:30%;
+	border-radius:8px 0 0 8px; 
+	padding:30px;
+
+}
+.card-container {
+	box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+-webkit-box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+-moz-box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+	border-radius:8px;
+	width: 80%;
+	display: flex;
+	flex-direction:row;
+	background-color: white;
+	justify-content: flex-start;
+	margin-bottom:40px;
+}
+
+.pharmacy-details {
+	font-size: medium;
+	font-family: "Lato";
+	overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  margin-bottom:10px;
+}
+.pharmacy-details-distance {
+	font-size: large;
+	
+}
+
+.pharmacy-name {
+	font-size:22px;
+	font-family: "Poppins";
+	transition: all 250ms;
+	position: relative;
+	color:white;
+	
+}
+
+.pharmacy-name:after {
+	content: "";
+	display: block;
+	height: 0.1em;
+	left: 0;
+	position: absolute;
+	background: orange;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+.pharmacy-name:hover:after {
+	width: 100%;
+}
+
+.pharmacy-link {
+	text-decoration: none;
+	color: black;
+	margin-bottom:20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.card-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
