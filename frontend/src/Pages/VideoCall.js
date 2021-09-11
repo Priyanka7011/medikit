@@ -101,11 +101,11 @@ function Video() {
             <div className="container">
                 <div className="video-container">
                     <div className="video">
-                        {stream && <video playsInline muted ref={myVideo} autoPlay style={{ width: "500px" }} />}
+                        {stream && <video playsInline muted ref={myVideo} autoPlay style={{ width: "300px" }} />}
                     </div>
                     <div className="video">
                         {callAccepted && !callEnded ?
-                            <video playsInline ref={userVideo} autoPlay style={{ width: "500px" }} /> :
+                            <video playsInline ref={userVideo} autoPlay style={{ width: "300px" }} /> :
                             null}
                     </div>
                 </div>
@@ -134,7 +134,7 @@ function Video() {
                     />
                     <div className="call-button">
                         {callAccepted && !callEnded ? (
-                            <Button variant="contained" color="secondary" onClick={leaveCall}>
+                            <Button style={{'background-color':'rgba(255,255,0,0)','border':'none','color':'white'}} variant="contained" color='rgba(255,255,0,0)' onClick={leaveCall}>
                                 End Call
                             </Button>
                         ) : (

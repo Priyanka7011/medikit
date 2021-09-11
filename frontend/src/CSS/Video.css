@@ -35,7 +35,7 @@
     margin-top: 2rem;
     border: 0.6px solid #000000;
     border-radius: 10px;
-    background-color: rgb(73, 153, 63);;
+    background-color: #036;
     color:white
 }
 
@@ -44,7 +44,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
-    margin-top: 10rem;
+    margin-top: 2rem;
     margin-left: 10rem;
     /* border: 1px solid #000000; */
 }
@@ -64,7 +64,7 @@
 }
 .myId input{
     background-color:rgb(173, 173, 173) !important;
-    padding:12px !important;
+    padding:25px !important;
    border-radius:8px 8px 0px 0px !important;
 }
 
