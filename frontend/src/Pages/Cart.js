@@ -7,6 +7,10 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 export default function Cart({ user, cart, setCart, items }) {
 	const [cartAmount, setCartAmount] = useState(0);
 	const [cartPrice, setCartPrice] = useState(0);
+	const [checkoutBtnStatus, setCheckoutBtnStatus] = useState(false);
+	const [checkoutBtnName, setCheckoutBtnName] = useState(
+		"Proceed to checkout"
+	);
 
 	useEffect(() => {
 		let _cartAmount = 0;
@@ -37,9 +41,13 @@ export default function Cart({ user, cart, setCart, items }) {
 
 	const handleOnClick = async () => {
 		if (user == null) return;
+		setCheckoutBtnStatus(true);
+		setCheckoutBtnName("Sending...");
 		const data = {
 			cart: cart,
 			username: user,
+			total_amount: cartAmount,
+			total_price: cartPrice,
 		};
 		await fetch("/api/cart/", {
 			method: "POST",
@@ -50,6 +58,8 @@ export default function Cart({ user, cart, setCart, items }) {
 			},
 			body: JSON.stringify(data),
 		});
+		setCheckoutBtnName("Proceed to checkout");
+		setCheckoutBtnStatus(false);
 	};
 
 	return (
@@ -77,11 +87,13 @@ export default function Cart({ user, cart, setCart, items }) {
 						<span>Total Price: Rs {cartPrice.toFixed(2)}</span>
 					</div>
 				</div>
-				<button className="checkout" onClick={handleOnClick}>
+				<button
+					className="checkout"
+					onClick={handleOnClick}
+					disabled={checkoutBtnStatus}
+				>
 					<FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon>
-					<span style={{ marginLeft: "5px" }}>
-						Proceed to checkout
-					</span>
+					<span style={{ marginLeft: "5px" }}>{checkoutBtnName}</span>
 				</button>
 			</div>
 		</div>

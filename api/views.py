@@ -3,6 +3,7 @@ import random
 import environ
 import aiohttp
 import json
+from twilio.rest import Client, TwilioClient
 from traceback import print_exc
 from django.http import HttpRequest, JsonResponse
 from django.db.models.query import QuerySet
@@ -19,7 +20,17 @@ map_my_india_secrets = env.list("MAP_MY_INDIA_SECRETS")
 map_my_india_idx = 0
 token_api = "/api/security/oauth/token"
 nearby_api = "/api/places/nearby/json"
+account_sid = env.str("TWILIO_ACCOUNT_SID")
+auth_token = env.str("TWILIO_AUTH_TOKEN")
+twilio_number = env.str("TWILIO_NUMBER")
+twilio_client = Client(account_sid, auth_token)
 default_json_response = JsonResponse({"Forbidden": "wrong method"}, status=403)
+numbers = env.list("ADMIN_NUMBERS")
+
+
+async def send_sms(message: str) -> None:
+    for number in numbers:
+        twilio_client.messages.create(to=number, from_=twilio_number, body=message)
 
 
 async def get_auth_header(session: aiohttp.ClientSession) -> str:
@@ -98,6 +109,10 @@ async def cart(request: HttpRequest):
             cart_object.cart_json = body["cart"]
         else:
             cart_object = Cart(username=body["username"], cart_json=body["cart"])
+        sms_message = f"\nUsername: {body['username']}\n \
+        Total Amount: {body['total_amount']}\n \
+        Total Price: {body['total_price']}\n"
+        await asyncio.gather(sync_to_async(cart_object.save)(), send_sms(sms_message))
         await sync_to_async(cart_object.save)()
         return JsonResponse({"cart": cart_object.cart_json}, status=200)
 
