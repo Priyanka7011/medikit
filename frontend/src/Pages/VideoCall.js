@@ -11,6 +11,7 @@ import "../CSS/Video.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone,faCopy} from '@fortawesome/free-solid-svg-icons'
 
+import DisplayDoctors from '../Components/displayDoctors' 
 
 const socket = io.connect('http://localhost:5000')
 function Video() {
@@ -26,6 +27,7 @@ function Video() {
     const myVideo = useRef()
     const userVideo = useRef()
     const connectionRef = useRef()
+    const [showDoctors,setShowDoctors]=useState(true)
 
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then((stream) => {
@@ -46,6 +48,7 @@ function Video() {
     }, [])
 
     const callUser = (id) => {
+        setShowDoctors(false);
         const peer = new Peer({
             initiator: true,
             trickle: false,
@@ -92,13 +95,17 @@ function Video() {
 
     const leaveCall = () => {
         setCallEnded(true)
+        setShowDoctors(true)
         connectionRef.current.destroy()
     }
 
+   
     return (
         <div class='videoCallHolder'>
-        
+            {showDoctors? <DisplayDoctors/>:null}
+           
             <div className="container">
+               
                 <div className="video-container">
                     <div className="video">
                         {stream && <video playsInline muted ref={myVideo} autoPlay style={{ width: "300px" }} />}

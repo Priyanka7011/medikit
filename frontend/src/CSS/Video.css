@@ -42,13 +42,40 @@
 .video-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    margin-top: 2rem;
-    margin-left: 10rem;
+  
+   
+    margin-left: 5rem;
     /* border: 1px solid #000000; */
 }
+.doctors{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e6e6f7;
+}
+.doctor-card{
+    width:25%;
+    background-color: white;
+    margin-right:40px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+-webkit-box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+-moz-box-shadow: 6px 0px 24px -4px rgba(0,0,0,0.64);
+line-height: 0.5em;
+}
 
+.doctor-card img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+.doctor-card p{
+    font-family:'Poppins' ;
+}
 .caller {
     text-align: center;
     color: #fff;
