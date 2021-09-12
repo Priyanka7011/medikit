@@ -140,11 +140,11 @@ function Video() {
 					<Button
 						variant="contained"
 						className="copyBtn"
-						style={{ marginBottom: "2rem" }}
+						style={{ marginBottom: "2rem" ,'backgroundColor':"#036",'color':'white'}}
 						onClick={handleCopyToClipBoard}
 					>
 						<FontAwesomeIcon icon={faCopy}></FontAwesomeIcon>
-						<span> Copy ID</span>
+						<span > Copy ID</span>
 					</Button>
 
 					<TextField
