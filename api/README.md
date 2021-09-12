@@ -17,9 +17,9 @@
 -   **Cart :**
 
     ```json
-    [
-        "{item_id}":"{item_amount}"
-    ]
+    {
+        "{item_id}" : "{item_amount}"
+    }
     ```
 
 -   **Pharmacy :**
