@@ -4,7 +4,7 @@ import { Autocomplete } from "@material-ui/lab";
 import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFirstAid } from "@fortawesome/free-solid-svg-icons";
+import { faFirstAid,faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar({ items, cart, setCart, user, setUser }) {
 	const [options, setOptions] = useState(Object.values(items));
@@ -55,8 +55,11 @@ export default function Navbar({ items, cart, setCart, user, setUser }) {
 				{user ? (
 					<>
 						<div className="avatar">
-							<Avatar>A</Avatar>
+							<Avatar><FontAwesomeIcon icon={faUser}></FontAwesomeIcon></Avatar>
 						</div>
+						<Link to="owner/FXL4Q4">
+							<button className="login-btn">My Pharmacy</button>
+						</Link>
 						<Link to="/video">
 							<button className="login-btn">
 								Consult Doctor
@@ -71,7 +74,7 @@ export default function Navbar({ items, cart, setCart, user, setUser }) {
 						<Link to="/login">
 							<button className="login-btn">Log In</button>
 						</Link>
-						<Link to="owner/C7U7PT">
+						<Link to="owner/FXL4Q4">
 							<button className="login-btn">My Pharmacy</button>
 						</Link>
 
