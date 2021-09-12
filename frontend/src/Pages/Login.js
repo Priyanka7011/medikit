@@ -9,7 +9,7 @@ export default function Login({ user, setUser }) {
 	useEffect(() => {
 		var config = {
 			containerID: "sawo-container",
-			identifierType: "email",
+			identifierType: "phone",
 			apiKey: "1becc7cb-07ea-4477-8d7f-2c4f4581febb",
 			onSuccess: (payload) => {
 				sessionStorage.setItem("token", payload.verification_token);
