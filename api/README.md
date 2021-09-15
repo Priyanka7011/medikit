@@ -1,14 +1,24 @@
 ## API
 
 ### Models
+-   **Item :**
 
+    ```json
+    {
+    	"id": "(int) item id",
+    	"name": "(str) item name",
+    	"amount": "(int) item amount available in pharmacy",
+    	"price": "(float) item price sold by pharmacy",
+    	"retail_price": "(float) item MRP",
+    	"image_url": "(str) item image url"
+    }
+    ```
+    
 -   **Cart :**
 
     ```json
     {
-    	"items": "[Item]",
-    	"total_amount": "(int) total number of items in cart",
-    	"total_price": "(float) total price of all items"
+        "{item_id}" : "{item_amount}"
     }
     ```
 
@@ -112,8 +122,10 @@
 
 -   **Data :**
 
-    -   `id:` key of the item to be added to cart
-    -   `amount:` amount of item to be in cart
+    -   `username:` username of the user
+    -   `total_amount:` total amount
+    -   `total_price:` total price
+    -   `cart:` "{Cart}"
 
 -   **Responses:**
 
@@ -151,3 +163,107 @@
     	"Invalid range": "ITEM_NAME out of stock"
     }
     ```
+
+### Postman Example :
+
+[Link](https://www.getpostman.com/collections/a34e4c67768d49335e69)
+
+```json
+{
+    "info": {
+        "_postman_id": "b961f515-6181-497c-ac2d-c4039e19b9ff",
+        "name": "Medikit api calls",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Nearby Pharmacies",
+            "id": "5c078031-75fc-4151-a1d5-a60c53ae825d",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:8000/api/pharmacy?latitude=23.2587264&longitude=77.4569984",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "pharmacy"
+                    ],
+                    "query": [
+                        {
+                            "key": "latitude",
+                            "value": "23.2587264"
+                        },
+                        {
+                            "key": "longitude",
+                            "value": "77.4569984"
+                        }
+                    ]
+                },
+                "description": "Nearby Pharmacies"
+            },
+            "response": []
+        },
+        {
+            "name": "Pharmacy Details",
+            "id": "d8109b71-4a80-4319-926e-e45cdc25a20e",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": "http://localhost:8000/api/pharmacy/09UIEC"
+            },
+            "response": []
+        },
+        {
+            "name": "Cart",
+            "id": "6726f17b-5898-4819-8257-34e2574ec201",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8000/api/cart/?username=1/",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "cart",
+                        ""
+                    ],
+                    "query": [
+                        {
+                            "key": "username",
+                            "value": "1/"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Cart",
+            "id": "5a5b5e08-1521-48f9-8c9e-9e1d4b1edf95",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\":\"1\",\"cart\":{},\"total_amount\":0,\"total_price\":0}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": "http://localhost:8000/api/cart/"
+            },
+            "response": []
+        }
+    ]
+}
+```

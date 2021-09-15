@@ -47,6 +47,9 @@
     margin-left: 5rem;
     /* border: 1px solid #000000; */
 }
+.copy{
+    font-size:12px;
+}
 .doctors{
     display:flex;
     justify-content: center;

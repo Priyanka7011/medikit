@@ -13,7 +13,7 @@ export default function displayDoctors(){
             <div>
                 <p style={{'font-weight':'bold'}}>Dr. Rahul Gupta </p>
                 <p>Physiologist</p>
-                <p>Id:</p>
+                <p class='copy'>Id : b1jbREHUxDyOyyYfAAAJ</p>
             </div>
         </div>
         <div class='doctor-card'>
@@ -21,7 +21,7 @@ export default function displayDoctors(){
             <div>
                 <p style={{'font-weight':'bold'}}>Dr. Arvind Sharma </p>
                 <p>Orthologist</p>
-                <p>Id:</p>
+                <p class='copy'>Id : yxRzc7fDu0VNncAEAAAL</p>
             </div>
         </div>
         <div class='doctor-card'>
@@ -29,7 +29,7 @@ export default function displayDoctors(){
             <div>
                 <p style={{'font-weight':'bold'}}>Dr. Ruchi Kumari </p>
                 <p>Gynecologist</p>
-                <p>Id:</p>
+                <p class='copy'>Id : gLoAy1X__HSwTLJRAAAN</p>
             </div>
         </div>
  </div>
