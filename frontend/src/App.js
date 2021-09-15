@@ -2,17 +2,16 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
-import Login from "./Pages/Login";
 import Cart from "./Pages/Cart";
 import Pharmacy from "./Pages/Pharmacy";
 import VideoCall from "./Pages/VideoCall";
 import Owner from "./Pages/Owner";
 import LandingPage from "./Pages/landingPage";
+
 export default function App() {
 	const [pharmacies, setPharmacies] = useState([]);
 	const [items, setItems] = useState({});
 	const [cart, setCart] = useState({});
-	const [user, setUser] = useState(null);
 
 	useEffect(() => {
 		navigator.geolocation.getCurrentPosition((position) => {
@@ -42,23 +41,9 @@ export default function App() {
 	return (
 		<div className="app">
 			<Router>
-				<Navbar
-					items={items}
-					cart={cart}
-					setCart={setCart}
-					user={user}
-					setUser={setUser}
-				></Navbar>
-				<Route exact path="/login">
-					<Login user={user} setUser={setUser} />
-				</Route>
+				<Navbar items={items} cart={cart} setCart={setCart}></Navbar>
 				<Route exact path="/cart">
-					<Cart
-						user={user}
-						items={items}
-						cart={cart}
-						setCart={setCart}
-					/>
+					<Cart items={items} cart={cart} setCart={setCart} />
 				</Route>
 				{pharmacies.map((pharmacy) => (
 					<Route exact path={`/pharmacy/${pharmacy.eLoc}`}>
@@ -70,7 +55,7 @@ export default function App() {
 					</Route>
 				))}
 				<Route exact path="/pharmacy">
-					<Home pharmacies={pharmacies} user={user} />
+					<Home pharmacies={pharmacies} />
 				</Route>
 				<Route exact path="/video/" component={VideoCall} />
 				{pharmacies.map((pharmacy) => (

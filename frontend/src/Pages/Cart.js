@@ -3,14 +3,16 @@ import "../CSS/Cart.css";
 import CartItem from "../Components/CartItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { useAuth0 } from "@auth0/auth0-react";
 
-export default function Cart({ user, cart, setCart, items }) {
+export default function Cart({ cart, setCart, items }) {
 	const [cartAmount, setCartAmount] = useState(0);
 	const [cartPrice, setCartPrice] = useState(0);
 	const [checkoutBtnStatus, setCheckoutBtnStatus] = useState(false);
 	const [checkoutBtnName, setCheckoutBtnName] = useState(
 		"Proceed to checkout"
 	);
+	const { user } = useAuth0();
 
 	useEffect(() => {
 		let _cartAmount = 0;
@@ -45,7 +47,7 @@ export default function Cart({ user, cart, setCart, items }) {
 		setCheckoutBtnName("Sending...");
 		const data = {
 			cart: cart,
-			username: user,
+			username: user.email,
 			total_amount: cartAmount,
 			total_price: cartPrice,
 		};

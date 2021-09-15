@@ -3,7 +3,7 @@ import random
 import environ
 import aiohttp
 import json
-from twilio.rest import Client, TwilioClient
+from twilio.rest import Client
 from traceback import print_exc
 from django.http import HttpRequest, JsonResponse
 from django.db.models.query import QuerySet

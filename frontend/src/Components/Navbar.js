@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Avatar, TextField } from "@material-ui/core";
 import { Autocomplete } from "@material-ui/lab";
 import { Link } from "react-router-dom";
 import "../CSS/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFirstAid,faUser } from "@fortawesome/free-solid-svg-icons";
+import { faFirstAid, faUser } from "@fortawesome/free-solid-svg-icons";
+import { useAuth0 } from "@auth0/auth0-react";
 
-export default function Navbar({ items, cart, setCart, user, setUser }) {
+export default function Navbar({ items, cart, setCart }) {
 	const [options, setOptions] = useState(Object.values(items));
-
-	const handleLogout = () => {
-		localStorage.getItem("token") && localStorage.removeItem("token");
-		setUser(null);
-	};
+	const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
 	const onSearchBarChange = (_event, item) => {
 		if (item == null) return;
@@ -52,10 +49,14 @@ export default function Navbar({ items, cart, setCart, user, setUser }) {
 				<span></span>
 			</label>
 			<div className="button-container">
-				{user ? (
+				{isAuthenticated ? (
 					<>
 						<div className="avatar">
-							<Avatar><FontAwesomeIcon icon={faUser}></FontAwesomeIcon></Avatar>
+							<Avatar>
+								<FontAwesomeIcon
+									icon={faUser}
+								></FontAwesomeIcon>
+							</Avatar>
 						</div>
 						<Link to="owner/FXL4Q4">
 							<button className="login-btn">My Pharmacy</button>
@@ -65,13 +66,18 @@ export default function Navbar({ items, cart, setCart, user, setUser }) {
 								Consult Doctor
 							</button>
 						</Link>
-						<button className="login-btn" onClick={handleLogout}>
+						<button
+							className="login-btn"
+							onClick={() =>
+								logout({ returnTo: window.location.origin })
+							}
+						>
 							LogOut
 						</button>
 					</>
 				) : (
 					<>
-						<Link to="/login">
+						<Link onClick={() => loginWithRedirect()}>
 							<button className="login-btn">Log In</button>
 						</Link>
 						<Link to="owner/FXL4Q4">
