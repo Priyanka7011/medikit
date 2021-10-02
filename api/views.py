@@ -1,6 +1,5 @@
 import asyncio
 import random
-import environ
 import aiohttp
 import json
 from twilio.rest import Client
@@ -11,21 +10,20 @@ from django.conf import settings
 from django.core.serializers import serialize
 from asgiref.sync import sync_to_async
 from .models import *
+import os
 
-env = environ.Env()
-env.read_env(str(settings.BASE_DIR / ".env"))
 map_my_india_api = "https://atlas.mapmyindia.com"
-map_my_india_ids = env.list("MAP_MY_INDIA_IDS")
-map_my_india_secrets = env.list("MAP_MY_INDIA_SECRETS")
+map_my_india_ids = os.environ["MAP_MY_INDIA_IDS"]
+map_my_india_secrets = os.environ["MAP_MY_INDIA_SECRETS"]
 map_my_india_idx = 0
 token_api = "/api/security/oauth/token"
 nearby_api = "/api/places/nearby/json"
-account_sid = env.str("TWILIO_ACCOUNT_SID")
-auth_token = env.str("TWILIO_AUTH_TOKEN")
-twilio_number = env.str("TWILIO_NUMBER")
+account_sid = os.environ["TWILIO_ACCOUNT_SID"]
+auth_token = os.environ["TWILIO_AUTH_TOKEN"]
+twilio_number = os.environ["TWILIO_NUMBER"]
 twilio_client = Client(account_sid, auth_token)
 default_json_response = JsonResponse({"Forbidden": "wrong method"}, status=403)
-numbers = env.list("ADMIN_NUMBERS")
+numbers = os.environ["ADMIN_NUMBERS"]
 
 
 async def send_sms(message: str) -> None:

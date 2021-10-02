@@ -13,22 +13,21 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import environ
 import dj_database_url
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # load file with environment varibles
-env = environ.Env()
-env.read_env(".env")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool("DEBUG", False)
+DEBUG = os.environ["DEBUG"]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str("DJANGO_SECRET_KEY")
+SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
 ALLOWED_HOSTS = ["*"]
 
@@ -62,7 +61,7 @@ ROOT_URLCONF = "app.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "frontend/build"],
+        "DIRS": [BASE_DIR / "build"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -84,7 +83,7 @@ import os
 
 DATABASES = {
     "default": dj_database_url.config(
-        default=os.path.expandvars(env.str("COCKROACH_DB_URL")),
+        default=os.path.expandvars(os.environ["COCKROACH_DB_URL"]),
         engine="django_cockroachdb",
     )
 }
@@ -129,7 +128,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
-    BASE_DIR / "frontend/build/static",
+    BASE_DIR / "build/static",
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
