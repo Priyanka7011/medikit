@@ -19,6 +19,8 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # load file with environment varibles
+env = environ.Env()
+env.read_env(".env")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ["DEBUG"]

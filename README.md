@@ -30,9 +30,6 @@
 
     ```npm start ```
 
-6. In another terminal change directory to frontend :
-
-    ``` cd frontend ``` 
 7. Install node module
 
     ```npm i```
